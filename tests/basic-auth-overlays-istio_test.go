@@ -44,9 +44,8 @@ varReference:
 	th.writeK("/manifests/common/basic-auth/overlays/istio", `
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-bases:
-- ../../base
 resources:
+- ../../base
 - kflogin-virtual-service.yaml
 configurations:
 - params.yaml

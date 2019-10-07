@@ -54,9 +54,8 @@ minioPvName=
 	th.writeK("/manifests/pipeline/minio/overlays/minioPd", `
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-bases:
-- ../../base
 resources:
+- ../../base
 - persistent-volume.yaml
 patchesStrategicMerge:
 - persistent-volume-claim.yaml

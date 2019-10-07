@@ -26,9 +26,8 @@ spec:
 	th.writeK("/manifests/gcp/iap-ingress/overlays/managed-cert", `
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-bases:
-- ../../base
 resources:
+- ../../base
 - cert.yaml
 namespace: kubeflow
 commonLabels:

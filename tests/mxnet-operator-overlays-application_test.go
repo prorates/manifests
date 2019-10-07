@@ -57,9 +57,8 @@ spec:
 	th.writeK("/manifests/mxnet-job/mxnet-operator/overlays/application", `
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-bases:
-- ../../base
 resources:
+- ../../base
 - application.yaml
 commonLabels:
   app.kubernetes.io/name: mxnet-operator

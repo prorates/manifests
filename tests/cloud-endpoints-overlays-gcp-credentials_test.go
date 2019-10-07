@@ -40,7 +40,7 @@ spec:
 	th.writeK("/manifests/gcp/cloud-endpoints/overlays/gcp-credentials", `
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-bases:
+resources:
 - ../../base
 patchesStrategicMerge:
 - gcp-credentials-patch.yaml`)

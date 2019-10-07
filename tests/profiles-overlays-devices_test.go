@@ -35,7 +35,7 @@ spec:
 	th.writeK("/manifests/profiles/overlays/devices", `
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-bases:
+resources:
 - ../../base
 patchesStrategicMerge:
 - deployment.yaml

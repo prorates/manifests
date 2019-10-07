@@ -156,7 +156,7 @@ application_secret=pUBnBOY80SnXgjibTYM9ZWNzY2xreNGQok
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: auth
-bases:
+resources:
 - ../../base
 
 patchesStrategicMerge:

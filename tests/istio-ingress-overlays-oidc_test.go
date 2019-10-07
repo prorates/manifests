@@ -45,7 +45,7 @@ clientId=
 clientSecret=
 `)
 	th.writeK("/manifests/aws/istio-ingress/overlays/oidc", `
-bases:
+resources:
 - ../../base
 patchesStrategicMerge:
 - ingress.yaml

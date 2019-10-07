@@ -82,9 +82,8 @@ spec:
 	th.writeK("/manifests/gcp/iap-ingress/overlays/certmanager", `
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-bases:
-- ../../base
 resources:
+- ../../base
 - job.yaml
 - certificate.yaml
 namespace: kubeflow

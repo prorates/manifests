@@ -46,9 +46,8 @@ spec:
 vpcId=
 region=us-west-2`)
 	th.writeK("/manifests/aws/aws-alb-ingress-controller/overlays/vpc", `
-bases:
-- ../../base
 resources:
+- ../../base
 - vpc.yaml
 configMapGenerator:
 - name: alb-ingress-controller-parameters

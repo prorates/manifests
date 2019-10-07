@@ -48,9 +48,8 @@ clusterDomain=cluster.local
 	th.writeK("/manifests/tektoncd/tektoncd-install/overlays/istio", `
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-bases:
-- ../../base
 resources:
+- ../../base
 - virtual-service.yaml
 configMapGenerator:
 - name: tektoncd-install-istio-parameters

@@ -44,9 +44,8 @@ varReference:
 	th.writeK("/manifests/katib-v1alpha2/katib-ui/overlays/istio", `
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-bases:
-- ../../base
 resources:
+- ../../base
 - katib-ui-virtual-service.yaml
 configurations:
 - params.yaml

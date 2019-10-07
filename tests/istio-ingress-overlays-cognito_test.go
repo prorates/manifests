@@ -37,7 +37,7 @@ CognitoAppClientId=
 CognitoUserPoolDomain=
 certArn=`)
 	th.writeK("/manifests/aws/istio-ingress/overlays/cognito", `
-bases:
+resources:
 - ../../base
 patchesStrategicMerge:
 - ingress.yaml

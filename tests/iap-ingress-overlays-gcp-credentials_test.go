@@ -63,7 +63,7 @@ spec:
 	th.writeK("/manifests/gcp/iap-ingress/overlays/gcp-credentials", `
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-bases:
+resources:
 - ../../base
 patchesStrategicMerge:
 - deployment.yaml
